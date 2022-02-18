@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact</title>
+  </head>
+  <script src="script.js"></script>
+
+  <body>
+    <div class="topnav">
+      <a href="./../zoo.html"><img class="resize" src="zoo_logo.png" /></a>
+      <a href="/zoo.html">Zoo</a>
+      <a href="index.html">Home</a>
+      <a href="facts.html">Facts</a>
+      <a href="diet.html">Diet</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <div class="search_box">
+        <form action="" id="form2">
+          <div>
+            <input type="text" id="search" /><input
+              type="button"
+              id="submit_form"
+              onclick="checkInput()"
+              value="Submit"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div>
+
+     <div w3-include-html="navbar.html"></div>
+    <div>
+      <h2>Send e-mail to sonic@hedgehogs.com:</h2>
+
+      <form
+        action="mailto:sonic@hedgehogs.com"
+        method="post"
+        enctype="text/plain"
+      >
+        Name:<br />
+        <input type="text" name="name" /><br />
+        E-mail:<br />
+        <input type="text" name="mail" /><br />
+        Comment:<br />
+        <input type="text" name="comment" size="50" /><br /><br />
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+      </form>
+    </div>
+  </body>
+</html>
